@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h3 {
+  margin-bottom: 3rem;
+  color: crimson;
+}
+span {
+  font-size: 4rem;
+  line-height: 1;
+  color: blueviolet;
+  cursor: pointer;
+  /* font-weight: 600; */
+}
+
+
+span:active {
+  animation: jump 3s ease-in-out;
+}
+@keyframes jump {
+  0% {
+    transform: translate(0, 0) rotate(100deg);
+  }
+  100% {
+    transform: scale(2.5) translate(0, -180px);
+  }
+}
